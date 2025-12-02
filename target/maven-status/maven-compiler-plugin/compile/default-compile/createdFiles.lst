@@ -1,0 +1,7 @@
+com\example\digitalwallet\service\WalletService.class
+com\example\digitalwallet\repository\WalletTransactionRepository.class
+com\example\digitalwallet\model\UserAccount.class
+com\example\digitalwallet\controller\WalletController.class
+com\example\digitalwallet\repository\UserAccountRepository.class
+com\example\digitalwallet\DigitalWalletApplication.class
+com\example\digitalwallet\model\WalletTransaction.class

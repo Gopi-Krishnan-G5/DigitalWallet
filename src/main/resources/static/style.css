@@ -1,0 +1,145 @@
+/* ===== General Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== Header ===== */
+h1 {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== Section Titles ===== */
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ===== Form Container ===== */
+form {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4b6cb7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(75,108,183,0.4);
+}
+
+/* ===== Buttons ===== */
+button {
+    background-color: #4b6cb7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #182848;
+}
+
+/* ===== Table Styles ===== */
+table {
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4b6cb7;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #eef3ff;
+}
+
+/* ===== Links ===== */
+a {
+    text-decoration: none;
+    color: #4b6cb7;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #182848;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    table, form {
+        width: 95%;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+}
+
+/* ===== Back Button Style ===== */
+.back-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #4b6cb7;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+/* Center container for Back link */
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}

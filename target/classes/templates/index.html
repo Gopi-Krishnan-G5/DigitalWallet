@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Wallet</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Digital Wallet System</h1>
+
+<h2>Create User</h2>
+<form action="/wallet/create" method="post">
+    <input type="text" name="name" placeholder="Enter name" required>
+    <button type="submit">Create</button>
+</form>
+
+<h2>Add Money</h2>
+<form action="/wallet/add" method="post">
+    <input type="number" name="userId" placeholder="User ID" required>
+    <input type="number" name="amount" placeholder="Amount" required>
+    <button type="submit">Add Money</button>
+</form>
+
+<h2>Transfer Money</h2>
+<form action="/wallet/transfer" method="post">
+    <input type="number" name="fromId" placeholder="From User ID" required>
+    <input type="number" name="toId" placeholder="To User ID" required>
+    <input type="number" name="amount" placeholder="Amount" required>
+    <button type="submit">Transfer</button>
+</form>
+
+<h2>Users</h2>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Balance</th><th>Transactions</th></tr>
+    <tr th:each="u : ${users}">
+        <td th:text="${u.id}"></td>
+        <td th:text="${u.name}"></td>
+        <td th:text="${u.balance}"></td>
+        <td><a th:href="@{'/wallet/transactions/' + ${u.id}}">View</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

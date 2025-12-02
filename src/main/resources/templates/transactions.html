@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transactions</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Transaction History</h1>
+
+<table>
+    <tr><th>ID</th><th>From</th><th>To</th><th>Amount</th><th>Date</th></tr>
+    <tr th:each="t : ${transactions}">
+        <td th:text="${t.id}"></td>
+        <td th:text="${t.fromUserId}"></td>
+        <td th:text="${t.toUserId}"></td>
+        <td th:text="${t.amount}"></td>
+        <td th:text="${t.dateTime}"></td>
+    </tr>
+</table>
+
+<a href="/wallet/" class="back-button back-button-container">Back</a>
+</body>
+</html>
